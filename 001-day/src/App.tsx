@@ -7,9 +7,9 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-        <Button color="bg_button_1" text="Neon Button"/>
-        <Button color="bg_button_2" text="Neon Button"/>
-        <Button color="bg_button_3" text="Neon Button"/>
+        <Button href="#" color="bg_button_1" text="Neon Button"/>
+        <Button href="#" color="bg_button_2" text="Neon Button"/>
+        <Button href="#" color="bg_button_3" text="Neon Button"/>
     </ThemeProvider>
   )
 }

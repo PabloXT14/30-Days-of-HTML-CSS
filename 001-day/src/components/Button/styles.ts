@@ -1,8 +1,10 @@
 import styled, { keyframes } from "styled-components";
 
 /* ===== TIPAGENS ===== */
+export type ButtonColorOptions = 'bg_button_1' | 'bg_button_2' | 'bg_button_3'
+
 export interface ButtonContainerProps {
-  color: 'bg_button_1' | 'bg_button_2' | 'bg_button_3'
+  color: ButtonColorOptions;
 }
 
 /* ===== ANIMATIONS ===== */

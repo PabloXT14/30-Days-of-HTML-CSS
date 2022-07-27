@@ -1,21 +1,22 @@
-import { ButtonContainer, ButtonContainerProps } from "./styles";
+import { AnchorHTMLAttributes } from "react";
+import { ButtonColorOptions, ButtonContainer } from "./styles";
 
-interface ButtonProps {
+interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   text: string;
-  color: 'bg_button_1' | 'bg_button_2' | 'bg_button_3';
+  color?: ButtonColorOptions;
 }
 
-export function Button(props: ButtonProps) {
+export function Button({ color = 'bg_button_1', text, ...rest}: ButtonProps) {
   return (
-    <ButtonContainer 
-      href="#"
-      color={props.color}
+    <ButtonContainer
+      color={color}
+      {...rest}
     >
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      {props.text}
+      {text}
     </ButtonContainer>
   );
 }
