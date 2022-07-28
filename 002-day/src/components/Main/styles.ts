@@ -52,8 +52,10 @@ export const MainContainer = styled.main`
   .title {
     font-size: 2.125rem;
     font-weight: 700;
-    line-height: 3;
+    /* line-height: 3; */
+    text-align: center;
     color: ${(props) => props.theme.dark};
+    margin-bottom: 2rem;
   }
 
   .description {
