@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
     background: ${(props) => props.theme.primary};
-    color: #${(props) => props.theme.secondary};
+    color: ${(props) => props.theme.secondary};
   }
 
 `;
