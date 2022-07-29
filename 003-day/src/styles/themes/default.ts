@@ -1,5 +1,6 @@
 export const defaultTheme = {
   bg_color: '#F5F8FF',
+  bg_color_1: '#FFFFFF',
   main_color: '#353536',
   secondary_color: '#8e92a4',
   main_text_color: '#5d606b',
@@ -19,4 +20,10 @@ export const defaultTheme = {
   box_color_3: '#ffd9d9',
   box_color_4: '#daffe5',
   task_color: '#777982',
+
+  border_color: '#e3e7f7',
+  circle_color: '#fe4d46',
+  circle_color_2: '#d5d7e3',
+  box_shadow_1: '#fbc023',
+  box_shadow_2: '#7dd21f'
 }

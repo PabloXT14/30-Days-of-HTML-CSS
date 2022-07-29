@@ -11,6 +11,7 @@ import {
   FiZap
 } from 'react-icons/fi';
 import { 
+  Item,
   LeftBarContainer, 
   LeftContent, 
   UpperPartContent 
@@ -87,10 +88,10 @@ export function LeftBar() {
         <ul className="action-list">
           {leftBarContent.actionListIcons.map((item) => {
             return (
-              <li className='item'>
+              <Item key={item.description}>
                 <item.icon />
                 <span>{item.description}</span>
-              </li>
+              </Item>
             )
           })}
         </ul>
@@ -98,10 +99,10 @@ export function LeftBar() {
         <ul className="category-list">
           {leftBarContent.categoryListIcons.map((item) => {
               return (
-                <li className='item'>
+                <Item key={item.description}>
                   <item.icon />
                   <span>{item.description}</span>
-                </li>
+                </Item>
               )
             })}
         </ul>
