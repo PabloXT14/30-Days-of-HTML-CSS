@@ -1,11 +1,19 @@
 import styled, { } from "styled-components";
-import { FiCheck } from 'react-icons/fi';
 
 export const PageContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 2.5rem 1.25rem 0 1.25rem;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    display: block;
+  }
+
+  @media(max-width: 520px) {
+    padding: 2.5rem 0.625rem 0 0.625rem;
+  }
 `;
 
 export const PageContentHeader = styled.div`
@@ -33,6 +41,10 @@ export const LabelWrapper = styled.div`
     padding: 1.25rem 1.875rem;
     transition: all .2s ease-in;
     cursor: pointer;
+
+    @media(max-width: 520px) {
+      padding: 1.25rem;
+    }
   }
   input[type="radio"]:checked + label {
     color: ${(props) => props.theme.checkbox_color};
@@ -44,8 +56,13 @@ export const TasksWrapper = styled.div`
   padding: 1.875rem 0;
   flex: 1;
   overflow-y: auto;
+
   height: 100%;
   padding-right: 0.5rem;
+
+  @media(max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const Task = styled.div`
@@ -84,14 +101,19 @@ export const Task = styled.div`
       border: 1px solid #ddd;
       border-radius: 2px;
       left: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
       transition: all .2s ease;
     }
 
     svg {
+      display: none;
       position: absolute;
       width: 1rem;
       height: 1rem;
       left: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
       color: ${(props) => props.theme.bg_color_1};
       transition: all .2s ease;
     }
@@ -106,7 +128,14 @@ export const Task = styled.div`
       border: 1px solid ${(props) => props.theme.checkbox_color};
   }
 
+  .task-item:checked + label .label-text {
+    svg {
+      display: block;
+    }
+  }
+
   .tag {
+    text-align: center;
     font-size: 0.875rem;
     padding: 0.25rem 0.5rem;
     border-radius: 1.25rem;

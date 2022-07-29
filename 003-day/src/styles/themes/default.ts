@@ -25,5 +25,6 @@ export const defaultTheme = {
   circle_color: '#fe4d46',
   circle_color_2: '#d5d7e3',
   box_shadow_1: '#fbc023',
-  box_shadow_2: '#7dd21f'
+  box_shadow_2: '#7dd21f',
+  count_color: '#623ce8',
 }

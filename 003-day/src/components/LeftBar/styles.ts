@@ -5,6 +5,12 @@ export const LeftBarContainer = styled.div`
   background: ${(props) => props.theme.bg_color};
   width: 14.375rem;
   border-right: 1px solid ${(props) => props.theme.border_color};
+
+  @media screen and (max-width: 900px) {
+    & {
+      display: none;
+    }
+  }
 `;
 
 export const UpperPartContent = styled.div`

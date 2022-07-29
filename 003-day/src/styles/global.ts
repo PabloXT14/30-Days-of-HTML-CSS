@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   *::-webkit-scrollbar {
     width: 6px;
+    height: 10px;
   }
 
   ::-webkit-scrollbar-track {
@@ -62,6 +63,10 @@ export const GlobalStyle = createGlobalStyle`
     );
 
     background-blend-mode: overlay, multiply, color, normal;
+
+    @media(max-width: 520px) {
+      padding: 0.5rem;
+    }
   }
 
   ul {
@@ -88,6 +93,11 @@ export const GlobalStyle = createGlobalStyle`
       0 4.2px 33.4px rgba(0, 0, 0, 0.029), 
       0 10px 80px rgba(0, 0, 0, 0.04);
 
-    overflow: hidden;;
+    overflow: hidden;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+      overflow-y: auto;
+    }
   }
 `;
