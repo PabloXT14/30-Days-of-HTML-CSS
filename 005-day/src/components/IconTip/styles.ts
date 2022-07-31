@@ -102,9 +102,9 @@ export const IconTipContainer = styled('div', {
     }
   },
 
-  defaultVariants: {
-    bgColor: 'bg1',
-  }
+  // defaultVariants: {
+  //   bgColor: 'bg1',
+  // }
 });
 
 export const Tooltip = styled('div', {

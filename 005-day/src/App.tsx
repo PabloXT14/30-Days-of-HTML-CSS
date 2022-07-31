@@ -24,22 +24,27 @@ export function App() {
     {
       icon: FaFacebook,
       iconDescription: 'Facebook',
+      bgColor: 'bg1'
     },
     {
       icon: FaTwitter,
       iconDescription: 'Twitter',
+      bgColor: 'bg2'
     },
     {
       icon: FaInstagram,
       iconDescription: 'Instagram',
+      bgColor: 'bg3'
     },
     {
       icon: FaGithub,
       iconDescription: 'Github',
+      bgColor: 'bg4',
     },
     {
       icon: FaYoutube,
-      iconDescription: 'Youtube'
+      iconDescription: 'Youtube',
+      bgColor: 'bg5'
     }
   ]
 
@@ -52,6 +57,7 @@ export function App() {
               key={icon.iconDescription}
               icon={icon.icon} 
               iconDescription={icon.iconDescription}
+              bgColor={icon.bgColor}
             />
           )
         })}
