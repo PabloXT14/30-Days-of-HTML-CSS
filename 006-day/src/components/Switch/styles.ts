@@ -1,6 +1,8 @@
 import { styled } from "../../styles/stitches.config";
 
 export const SwitchContainer = styled('label', {
+  $$shadow1: '$colors$shadow_1',
+  $$shadow2: '$colors$shadow_2',
   position: 'relative',
   display: 'inline-block',
   widthPxToRem: 80,
@@ -8,19 +10,17 @@ export const SwitchContainer = styled('label', {
   border: '2px solid',
   borderColor: '$border_1',
   backgroundColor: '$background_2',
-  boxShadow: 
-    `7px 7px 23px $shadow_1,
-    -7px -7px 23px $shadow_2`,
+  boxShadow: `7px 7px 23px $$shadow1, -7px -7px 23px $$shadow2`,
   overflow: 'hidden',
   borderRadius: '60px',
 
   'input': {
     opacity: 0,
-    width: '100%',
-    height: '100%',
+    width: 0,
+    height: 0,
   },
 
-  'input:checked + div:before': {
+  'input:checked + div::before': {
     backgroundColor: '$shadow_2',
     boxShadow: 'none',
   },
@@ -70,7 +70,7 @@ export const Slider = styled('div', {
   variants: {
     sliders: {
       slider1: {
-        color: '$shadow_3',
+        color: '$shadow_2',
         fontWeight: 600,
         backgroundColor: '$background_3',
       },
