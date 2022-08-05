@@ -5,20 +5,20 @@ import { randomImages } from './data/randomImages';
 globalStyles();
 
 export function App() {
-
+  const images = Object.keys(randomImages);// retorna um array das chaves de um objeto
 
   return (
     <PhotoGridContainer>
-      {Object.keys(randomImages).map((image) => {
+      {images.map((image) => {
         return (
-          <PhotoGridItem>
+          <PhotoGridItem key={image}>
             <img src={randomImages[image]} alt="" />
           </PhotoGridItem>
         )
       })}
-      {Object.keys(randomImages).map((image) => {
+      {images.map((image) => {
         return (
-          <PhotoGridItem>
+          <PhotoGridItem key={image}>
             <img src={randomImages[image]} alt="" />
           </PhotoGridItem>
         )

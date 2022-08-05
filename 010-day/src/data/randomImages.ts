@@ -1,4 +1,4 @@
-export const randomImages = {
+export const randomImages: any = {
   img1: 'https://images.unsplash.com/photo-1659515357675-b35e26415c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
   img2: 'https://images.unsplash.com/photo-1659608877046-340042309b3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
   img3: 'https://images.unsplash.com/photo-1659397265966-57097968e11b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
