@@ -2,9 +2,10 @@ import { PhotoGridContainer, PhotoGridItem } from "./AppStyles";
 import { globalStyles } from "./styles/global"
 import { randomImages } from './data/randomImages';
 
+globalStyles();
+
 export function App() {
 
-  globalStyles();
 
   return (
     <PhotoGridContainer>

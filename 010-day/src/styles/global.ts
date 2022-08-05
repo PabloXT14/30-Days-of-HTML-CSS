@@ -6,7 +6,18 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: 'border-box',
   },
-  body: {
+  'body': {
     backgroundColor: '$primary',
+  },
+  '::-webkite-scrollbar': {
+    width: '6px',
+    height: '8px',
+  },
+  '::-webkit-scrollbar-track': {
+    backgroundColor: 'transparent',
+  },
+  '::-webkit-scrollbar-thumb': {
+    backgroundColor: '$secondary',
+    borderRadius: '3px',
   }
 })
