@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   color: ${(props) => props.theme.text_color_1};
-  margin: 3.3rem 0;
+  margin: 1rem 0 3.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -32,7 +32,7 @@ export const CardContainer = styled.div<CardContainerProps>`
     `}
 
   ul {
-    margin: 2.6rem;
+    margin: 1.3rem 2.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@ export const CardContainer = styled.div<CardContainerProps>`
         props.variants === 'shadow'
           ? props.theme.text_color_4
           : props.theme.text_color_3};
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
 
     .btn {
@@ -70,6 +70,7 @@ export const CardContainer = styled.div<CardContainerProps>`
       border: 0;
       font-weight: bold;
       cursor: pointer;
+      transition: all 0.2s ease;
 
       ${(props) =>
         props.variants === 'active' &&
@@ -77,6 +78,10 @@ export const CardContainer = styled.div<CardContainerProps>`
           background: ${(props) => props.theme.bg_color_2};
           color: ${(props) => props.theme.primary_color};
         `}
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &.bottom-bar {
@@ -91,6 +96,7 @@ export const CardContainer = styled.div<CardContainerProps>`
 
     &.pack {
       font-size: 1.1rem;
+      padding-bottom: 0.4rem;
     }
   }
 

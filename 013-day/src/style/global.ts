@@ -8,8 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   :focus {
-    outline: transparent;
-    box-shadow: 0 0 0 2px ${(props) => props.theme.primary_color};
+    outline: none;
+    box-shadow: 0 0 0 2px ${(props) => props.theme.text_primary};
   }
 
   *::-webkit-scrollbar {
@@ -22,26 +22,15 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.primary_color};
+    background-color: ${(props) => props.theme.text_primary};
     border-radius: 3px;
   }
 
   body {
-    background-color: ${(props) => props.theme.bg_body};
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    width: 80%;
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    overflow-x: scroll;
-
-    a {
-      text-decoration: none;
-    }
+    justify-content: center;
+    height: 100vh;
   }
-
-  
 `
