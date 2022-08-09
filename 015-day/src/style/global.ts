@@ -28,6 +28,12 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Roboto', sans-serif;
-    background: ${(props) => props.theme.bg_primary};
+    letter-spacing: -0.2px;
+    background: ${(props) => props.theme.primary};
+  }
+  
+  div, p {
+    color: ${(props) => props.theme.secondary};
+    text-shadow: 1px 1px 1px ${(props) => props.theme.tertiary};
   }
 `

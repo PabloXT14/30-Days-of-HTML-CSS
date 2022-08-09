@@ -1,13 +1,16 @@
 export const defaultTheme = {
-  primary: '#f2d1cb',
-  secondary: '#000000',
+  primary: '#ebecf0',
+  secondary: '#babecc',
   tertiary: '#FFFFFF',
 
-  bg_primary: '#f8f9fa',
-  bg_secondary: '#f2d1cb',
-  bg_tertiary: '#FFFFFF',
+  color_1: '#61677c',
+  color_2: '#ae1100',
 
-  box_shadow_1: '#997771',
-  box_shadow_2: '#FFFFFF',
-  box_shadow_3: '#6c757d',
+  bg_primary: '',
+  bg_secondary: '',
+  bg_tertiary: '',
+
+  box_shadow_1: '',
+  box_shadow_2: '',
+  box_shadow_3: '',
 }
