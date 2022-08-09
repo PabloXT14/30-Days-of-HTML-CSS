@@ -3,8 +3,6 @@ export const defaultTheme = {
   secondary: '#000000',
   tertiary: '#FFFFFF',
 
-  text_primary: '#8257e6',
-
   bg_primary: '#f8f9fa',
   bg_secondary: '#f2d1cb',
   bg_tertiary: '#FFFFFF',
@@ -12,6 +10,10 @@ export const defaultTheme = {
   bg_5: '#ac46a1',
   bg_6: '#ff5c8a',
   bg_7: '#ffc2d4',
+  bg_8: '#ccb0ab',
+  bg_9: '#e6c7c2',
+  bg_10: '#eabfb9',
+  bg_11: '#774936',
 
   box_shadow_1: '#997771',
   box_shadow_2: '#FFFFFF',

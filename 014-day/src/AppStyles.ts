@@ -142,38 +142,217 @@ export const HandHolder = styled.div`
   }
 `
 
-export const StrapHolderUp1 = styled.div``
+export const Strap1 = styled.div`
+  position: absolute;
+  width: 6.875rem;
+  height: 6.875rem;
+  top: 99%;
+  left: 28%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_8},
+    ${(props) => props.theme.bg_9}
+  );
+  border-radius: 10px;
+  z-index: -1;
+  box-shadow: inset 0 2px 7px ${(props) => props.theme.secondary};
+`
 
-export const CircleHide11 = styled.div``
+export const Strap2 = styled.div`
+  position: absolute;
+  width: 6.875rem;
+  height: 6.875rem;
+  top: -42%;
+  left: 28%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_8},
+    ${(props) => props.theme.bg_9}
+  );
+  border-radius: 10px;
+  z-index: -1;
+  box-shadow: inset 0 -1px 4px ${(props) => props.theme.secondary};
+`
 
-export const LineHide11 = styled.div``
+export const StrapHolderUp1 = styled.div`
+  position: absolute;
+  width: 1.625rem;
+  height: 2.8125rem;
+  top: -6%;
+  left: 18%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_10},
+    ${(props) => props.theme.bg_9}
+  );
+  box-shadow: inset 0 -1px 4px ${(props) => props.theme.secondary};
+  border-radius: 10%;
+  z-index: -2;
+`
 
-export const StrapHolderUp2 = styled.div``
+export const StrapHolderUp2 = styled.div`
+  position: absolute;
+  width: 1.625rem;
+  height: 2.8125rem;
+  top: -6%;
+  right: 18%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_10},
+    ${(props) => props.theme.bg_9}
+  );
+  box-shadow: inset 0 -1px 4px ${(props) => props.theme.secondary};
+  border-radius: 10%;
+  z-index: -2;
+`
 
-export const CircleHide12 = styled.div``
+export const StrapHolderDown1 = styled.div`
+  position: absolute;
+  width: 1.625rem;
+  height: 2.8125rem;
+  bottom: -6%;
+  left: 18%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_10},
+    ${(props) => props.theme.bg_9}
+  );
+  box-shadow: inset 0 -1px 4px ${(props) => props.theme.secondary};
+  border-radius: 10%;
+  z-index: -2;
+`
 
-export const LineHide12 = styled.div``
+export const StrapHolderDown2 = styled.div`
+  position: absolute;
+  width: 1.625rem;
+  height: 2.8125rem;
+  bottom: -6%;
+  right: 18%;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.bg_10},
+    ${(props) => props.theme.bg_9}
+  );
+  box-shadow: inset 0 -1px 4px ${(props) => props.theme.secondary};
+  border-radius: 10%;
+  z-index: -2;
+`
 
-export const StrapHolderDown1 = styled.div``
+export const CircleHide11 = styled.div`
+  position: absolute;
+  width: 6.4375rem;
+  height: 6.4375rem;
+  margin-left: -18%;
+  margin-top: -23.4%;
+  background: ${(props) => props.theme.bg_primary};
+  border-radius: 50%;
+`
 
-export const CircleHide21 = styled.div``
+export const CircleHide12 = styled.div`
+  position: absolute;
+  width: 6.4375rem;
+  height: 6.4375rem;
+  right: -18%;
+  top: -23.4%;
+  background: ${(props) => props.theme.bg_primary};
+  border-radius: 50%;
+`
 
-export const LineHide21 = styled.div``
+export const CircleHide21 = styled.div`
+  position: absolute;
+  width: 6.4375rem;
+  height: 6.4375rem;
+  left: -18%;
+  bottom: -23.4%;
+  background: ${(props) => props.theme.bg_primary};
+  border-radius: 50%;
+`
 
-export const StrapHolderDown2 = styled.div``
+export const CircleHide22 = styled.div`
+  position: absolute;
+  width: 6.4375rem;
+  height: 6.4375rem;
+  right: -18%;
+  bottom: -23.4%;
+  background: ${(props) => props.theme.bg_primary};
+  border-radius: 50%;
+`
 
-export const CircleHide22 = styled.div``
+export const LineHide11 = styled.div`
+  position: absolute;
+  width: 1.875rem;
+  height: 0.625rem;
+  left: 15%;
+  top: -7.5%;
+  background: ${(props) => props.theme.bg_primary};
+  transform: rotate(-25deg);
+`
 
-export const LineHide22 = styled.div``
+export const LineHide12 = styled.div`
+  position: absolute;
+  width: 1.875rem;
+  height: 0.625rem;
+  right: 15%;
+  top: -7.5%;
+  background: ${(props) => props.theme.bg_primary};
+  transform: rotate(25deg);
+`
 
-export const Strap1 = styled.div``
+export const LineHide21 = styled.div`
+  position: absolute;
+  width: 1.875rem;
+  height: 0.625rem;
+  left: 15%;
+  bottom: -7.5%;
+  background: ${(props) => props.theme.bg_primary};
+  transform: rotate(25deg);
+`
 
-export const Strap2 = styled.div``
+export const LineHide22 = styled.div`
+  position: absolute;
+  width: 1.875rem;
+  height: 0.625rem;
+  right: 15%;
+  bottom: -7.5%;
+  background: ${(props) => props.theme.bg_primary};
+  transform: rotate(-25deg);
+`
 
-export const BackStrap = styled.div``
+export const BackStrap = styled.div`
+  position: absolute;
+  width: 6.25rem;
+  height: 25rem;
+  background: ${(props) => props.theme.bg_11};
+  left: 30%;
+  top: -30%;
+  z-index: -2;
+`
 
-export const Button1 = styled.div``
+export const Button1 = styled.div`
+  position: absolute;
+  height: 3.125rem;
+  width: 0.9375rem;
+  background: ${(props) => props.theme.secondary};
+  right: 3%;
+  top: 17%;
+  border-radius: 40%;
+  transform: rotate(-27deg);
+  border: 0.7px solid ${(props) => props.theme.secondary};
+  box-shadow: inset 7px 7px 10px ${(props) => props.theme.box_shadow_2},
+    inset -2px -1px 1px ${(props) => props.theme.box_shadow_3};
+  z-index: -2;
+`
 
-export const ButtonHide = styled.div``
-
-export const Button2 = styled.div``
+export const Button2 = styled.div`
+  position: absolute;
+  height: 0.5625rem;
+  width: 2.1875rem;
+  background: ${(props) => props.theme.bg_8};
+  right: -1.5%;
+  bottom: 25%;
+  border-radius: 50%;
+  transform: rotate(117deg);
+  border: 1px solid ${(props) => props.theme.secondary};
+  box-shadow: inset -1px 1px 3px ${(props) => props.theme.box_shadow_2};
+  z-index: -1;
+`

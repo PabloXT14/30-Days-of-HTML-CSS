@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
   :focus {
     outline: none;
-    box-shadow: 0 0 0 2px ${(props) => props.theme.text_primary};
+    box-shadow: 0 0 0 2px ${(props) => props.theme.secondary};
   }
 
   *::-webkit-scrollbar {
@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.text_primary};
+    background-color: ${(props) => props.theme.secondary};
     border-radius: 3px;
   }
 

@@ -29,7 +29,6 @@ export function App() {
         <S.Strap2 />
         <S.BackStrap />
         <S.Button1 />
-        <S.ButtonHide />
         <S.Button2 />
       </S.MainDial>
     </ThemeProvider>
