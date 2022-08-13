@@ -1,6 +1,7 @@
 export const defaultTheme = {
   primary: '',
 
+  white_900: '#FFFFFF',
   white_500: '#e9e9e9',
   gray_500: '#33333',
   blue_500: '#0367a6',

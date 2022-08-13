@@ -1,36 +1,51 @@
+import { FormEvent, useState } from 'react'
 import * as S from './styles'
 
 export function Form() {
+  const [isRightPanelActive, setIsRightPanelActive] = useState(true)
+
+  function handleSubmitForms(event: FormEvent) {
+    event.preventDefault()
+  }
+
+  function handleSignIn() {
+    setIsRightPanelActive(false)
+  }
+
+  function handleSignUp() {
+    setIsRightPanelActive(true)
+  }
+
   return (
     <S.FormContainer>
-      <S.SignUpContainer>
-        <form action="#" id="form1">
-          <h2>Sign Up</h2>
+      <S.SignUpContainer isRightPanelActive={isRightPanelActive}>
+        <form action="#" id="form1" onSubmit={handleSubmitForms}>
+          <S.FormTitle>Sign Up</S.FormTitle>
           <input type="text" placeholder="User" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <S.CustomButton>Sign Up</S.CustomButton>
         </form>
       </S.SignUpContainer>
 
-      <S.SignInContainer>
-        <form action="#">
-          <h2>Sign In</h2>
+      <S.SignInContainer isRightPanelActive={isRightPanelActive}>
+        <form action="#" id="form2" onSubmit={handleSubmitForms}>
+          <S.FormTitle>Sign In</S.FormTitle>
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <a href="#">Forgot your passwaord?</a>
-          <button>Sign In</button>
+          <S.Link href="#">Forgot your passwaord?</S.Link>
+          <S.CustomButton>Sign In</S.CustomButton>
         </form>
       </S.SignInContainer>
 
-      <S.OverlayContainer>
+      <S.OverlayContainer isRightPanelActive={isRightPanelActive}>
         <div className="overlay">
           <div className="overlay__panel overlay--left">
-            <button>Sing In</button>
+            <S.CustomButton onClick={handleSignIn}>Sing In</S.CustomButton>
           </div>
 
           <div className="overlay__panel overlay--right">
-            <button>Sing Up</button>
+            <S.CustomButton onClick={handleSignUp}>Sing Up</S.CustomButton>
           </div>
         </div>
       </S.OverlayContainer>

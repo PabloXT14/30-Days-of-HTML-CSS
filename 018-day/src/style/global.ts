@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
   :focus {
     outline: none;
-    box-shadow: 0 0 0 2px ${(props) => props.theme}
+    box-shadow: 0 0 0 2px ${(props) => props.theme.blue_500};
   }
 
   ::-webkit-scrollbar {
@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
     background-position: center;
     background-size: cover;
     display: grid;
-    place-items: center;
+    align-items: center;
     height: 100vh;
   }
 `
