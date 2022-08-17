@@ -1,24 +1,22 @@
 import { createStitches, ScaleValue } from "@stitches/react";
 
-export const {
+export const { 
   styled,
   css,
   globalCss,
   keyframes,
-  getCssText,
   theme,
   createTheme,
-  config,
+  getCssText
 } = createStitches({
   theme: {
     colors: {
-      primary: `#D73628`,
+      primary: `#c47135`,
 
-      bg_body: `#121214`,
-      bg_card: `#202024`,
+      bg_body: `#212121`,
 
       title: `#FFFFFF`,
-      text: `#C4C4CC`,
+      text: `#FFFFFF`,
 
       shape: `#87868b`,
     },
@@ -32,7 +30,7 @@ export const {
       '24': `1.5rem`,
       '32': `2rem`,
     },
-    size: {
+    sizes: {
       '0': `0px`,
       '1': `1px`,
       '4': `0.25rem`,
@@ -43,7 +41,7 @@ export const {
       '32': `2rem`,
     },
     fonts: {
-      default: 'Roboto',
+      default: 'Roboto'
     },
     radii: {
       full: '99999px',
@@ -51,7 +49,7 @@ export const {
     }
   },
   media: {
-    bp1: '(max-width: 760px)'
+    bp1: '(max-width: 768px)',
   },
   utils: {
     marginX: (value: ScaleValue<'space'>) => ({ marginLeft: value, marginRight: value }),
@@ -59,4 +57,4 @@ export const {
     paddingX: (value: ScaleValue<'space'>) => ({ paddingLeft: value, paddingRight: value }),
     paddingY: (value: ScaleValue<'space'>) => ({ paddingTop: value, paddingBottom: value })
   }
-});
+})
