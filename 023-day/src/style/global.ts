@@ -8,9 +8,8 @@ export const globalStyles = globalCss({
   },
 
   ':focus': {
-    $$shadowColor: '$primary',
     outline: 'none',
-    boxShadow: '0 0 0 2px $$shadowColor',
+    boxShadow: '0 0 0 2px $colors$primary',
   },
 
   '::-webkit-scrollbar': {
